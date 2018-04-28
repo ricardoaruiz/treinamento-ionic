@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>    
+    <ion-title>AlertPage</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <button ion-button (click)="openBasicAlert()">Alert Simples</button>
+  <button ion-button (click)="openConfirmAlert()">Alert Confirmação</button>
+  <button ion-button (click)="openInputAlert()">Alert com input de dados</button>
+  <button ion-button (click)="openRadioAlert()">Alert com radiobutton</button>
+  <button ion-button (click)="openCheckboxAlert()">Alert com checkbox</button>
+</ion-content>

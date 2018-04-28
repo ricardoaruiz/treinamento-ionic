@@ -3,6 +3,8 @@
 **Sites**
 - https://ionicframework.com/getting-started
 - https://creator.ionic.io/app/login
+- https://ionicframework.com/docs/cli/
+- https://ionicframework.com/docs/cli/commands.html
 
 **Ferramentas necessárias:**
 - NodeJs 
@@ -46,3 +48,9 @@ ionic serve -l
 
      https://ionicframework.com/docs/components/#action-sheets
      https://ionicframework.com/docs/ionicons/
+
+2. **Alert**
+
+    **Referências ActionSheet:**
+    
+    https://ionicframework.com/docs/components/#alert
