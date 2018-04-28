@@ -1,0 +1,147 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>    
+    <ion-title>Card</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+ <!-- Card simple -->
+ <hr/>
+ <h2>Card básico</h2>
+ <ion-card>
+   <ion-card-header>
+     Card simples
+   </ion-card-header>
+   <ion-card-content>
+     Conteúdo do card simple
+   </ion-card-content>
+ </ion-card> 
+
+ <!-- Card lista de botões -->
+ <hr/>
+ <h2>Card com lista</h2>
+ <ion-card>
+   <ion-card-header>
+     Cartão com lista
+   </ion-card-header>
+
+   <ion-list >
+    <button ion-item>
+      <ion-icon name="cart" item-start></ion-icon>
+      Shopping
+    </button>
+
+    <button ion-item>
+      <ion-icon name="medical" item-start></ion-icon>
+      Hospital
+    </button>
+
+    <button ion-item>
+      <ion-icon name="cafe" item-start></ion-icon>
+      Coffee
+    </button>
+
+    <button ion-item>
+      <ion-icon name="paw" item-start></ion-icon>
+      Dog Park
+    </button>    
+   </ion-list>
+ </ion-card>
+
+ <!-- Card com imagem -->
+ <hr/>
+ <h2>Card com imagem</h2>
+ <ion-card>
+   <img src="https://scontent.fqps2-1.fna.fbcdn.net/v/t1.0-9/23561446_10156079789227280_2407302888920425796_n.jpg?_nc_cat=0&oh=0feb27c5d102cc205a48313bb00a9c94&oe=5B5A5B66"/>
+   <ion-card-content>
+     <ion-card-title>
+      Boyce Avenue       
+     </ion-card-title>
+     <p>
+      The most popular industrial group ever, and largely
+      responsible for bringing the music to a mass audience.       
+     </p>
+
+    <ion-grid no-padding>
+      <ion-row no-padding>
+        <ion-col text-left>
+          <button ion-button clear small color="danger" class="favorite-button">
+            <ion-icon name="star"></ion-icon>
+            Favorite
+          </button>
+        </ion-col>
+        <ion-col text-center>
+          <button ion-button clear small color="danger" class="listen-button">
+            <ion-icon name="musical-notes"></ion-icon>
+            Listen
+          </button>
+        </ion-col>
+        <ion-col text-right>
+          <button ion-button clear small icon-left class="share-button">
+            <ion-icon name="share-alt" item-end></ion-icon>        
+            Share
+          </button>
+        </ion-col>        
+      </ion-row>
+    </ion-grid>
+  </ion-card-content>
+
+ </ion-card>
+
+ <!-- Card backgorung -->
+ <hr/>
+ <h2>Card com imagem background</h2>
+ <ion-card class="background-card">
+  <img src="http://visitesaopaulo.com/wp-content/uploads/2017/11/4-3-800x445.jpg">
+  <div class="titulo-card">São Paulo</div>
+  <div class="subtitulo-card">11 milhões de habitantes</div>
+ </ion-card>
+
+ <ion-card class="background-card">
+  <img src="https://www.cadastro4move.me/wp-content/uploads/2018/03/4move-florianopolis.jpg">
+  <div class="titulo-card">Florianópolis</div>
+  <div class="subtitulo-card">4 milhões de habitantes</div>
+ </ion-card>
+
+ <!-- Card Social -->
+ <hr/>
+ <h2>Card Social</h2>
+ <ion-card>
+   <ion-item>
+     <ion-avatar item-left>
+       <img src="assets/imgs/marty-avatar.png">
+     </ion-avatar>
+     <h2>Marty McFly</h2>
+     <p>November 5, 1955</p>
+   </ion-item>
+   <img src="assets/imgs/advance-card-bttf.png">
+   <ion-card-content>
+     <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... 
+       out of a DeLorean?! Whoa. This is heavy.</p>
+   </ion-card-content>
+   <ion-row>
+     <ion-col>
+       <button ion-button icon-left clear small>
+         <ion-icon name="thumbs-up"></ion-icon>
+         <div>12 Likes</div>
+       </button>
+     </ion-col>
+     <ion-col>
+       <button ion-button icon-left clear small>
+         <ion-icon name="text"></ion-icon>
+         <div>4 comments</div>
+       </button>
+     </ion-col>
+     <ion-col align-self-center text-center>
+       <ion-note>
+         11h ago
+       </ion-note>
+     </ion-col>
+   </ion-row>
+ </ion-card>
+
+</ion-content>

@@ -66,3 +66,10 @@ ionic serve -l
     **Referências Button:**
 
    https://ionicframework.com/docs/components/#buttons    
+
+
+5. **Card**
+
+   **Referências Card:**
+
+   https://ionicframework.com/docs/components/#cards
