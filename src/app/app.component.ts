@@ -8,6 +8,7 @@ import { ListPage } from '../pages/list/list';
 import { ActionSheetPage } from '../pages/action-sheet/action-sheet';
 import { AlertPage } from './../pages/alert/alert';
 import { BadgePage } from './../pages/badge/badge';
+import { ButtonPage } from './../pages/button/button';
 
 @Component({
   templateUrl: 'app.html'
@@ -28,7 +29,8 @@ export class MyApp {
       { title: 'List', component: ListPage },
       { title: 'ActionSheet', component: ActionSheetPage},
       { title: 'Alert', component: AlertPage},
-      { title: 'Badge', component: BadgePage}
+      { title: 'Badge', component: BadgePage},
+      { title: 'Button', component: ButtonPage}
     ];
 
   }

@@ -60,3 +60,9 @@ ionic serve -l
     **Referências Badge:**
 
     https://ionicframework.com/docs/components/#badges
+
+4. **Button**
+
+    **Referências Button:**
+
+   https://ionicframework.com/docs/components/#buttons    
