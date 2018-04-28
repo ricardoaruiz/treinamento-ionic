@@ -16,6 +16,33 @@ ionic start <myApp> <template>
 ```
 **Subindo o projeto**
 ``` 
-ionic serve - para iniciar o app
+ionic serve
 ```
-******
+Para iniciar o app com o lab para ver os layouts nas diferentes plataformas
+``` 
+ionic serve -l
+```
+
+
+### Componentes Ionic**Componentes Ionic**
+
+1. **ActionSheet**
+
+	Criamos uma página para mostrar o ActionSheetPage
+
+	```
+    ionic generate page ActionSheetPage
+	```
+
+    Após a criação da página, adicionar ela no "app.modules.ts"
+
+    ```
+    import { ActionSheetPage } from '../pages/action-sheet/action-sheet';
+    ```
+
+    Adicionar no "declarations" e no "entryComponents" do "app.module.ts"
+
+    **Referências ActionSheet:**
+
+     https://ionicframework.com/docs/components/#action-sheets
+     https://ionicframework.com/docs/ionicons/
