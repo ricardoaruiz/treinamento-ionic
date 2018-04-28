@@ -51,6 +51,12 @@ ionic serve -l
 
 2. **Alert**
 
-    **Referências ActionSheet:**
+    **Referências Alert:**
     
     https://ionicframework.com/docs/components/#alert
+
+3. **Badge**
+
+    **Referências Badge:**
+
+    https://ionicframework.com/docs/components/#badges
