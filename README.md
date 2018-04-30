@@ -79,3 +79,9 @@ ionic serve -l
    **Referências Checkbox:**
 
    https://ionicframework.com/docs/components/#checkbox
+
+7. **Range**
+
+   **Referências Range:**
+
+  https://ionicframework.com/docs/components/#range   

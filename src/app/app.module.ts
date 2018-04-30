@@ -15,6 +15,7 @@ import { CardPage } from './../pages/card/card';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { CheckboxPage } from '../pages/checkbox/checkbox';
+import { RangePage } from '../pages/range/range';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { CheckboxPage } from '../pages/checkbox/checkbox';
     BadgePage,
     ButtonPage,
     CardPage,
-    CheckboxPage
+    CheckboxPage,
+    RangePage
   ],
   imports: [
     BrowserModule,
@@ -43,7 +45,8 @@ import { CheckboxPage } from '../pages/checkbox/checkbox';
     BadgePage,
     ButtonPage,
     CardPage,
-    CheckboxPage
+    CheckboxPage,
+    RangePage
   ],
   providers: [
     StatusBar,
