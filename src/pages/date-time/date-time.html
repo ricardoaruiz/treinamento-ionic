@@ -21,6 +21,7 @@
       [label]="'Start Date'"
       [displayFormat]="'DD de MMMM de YYYY'"
       [pickerFormat]="'DD MM YYYY'"
+      [placeholder]="'select start date'"
       [value]="event.startDate"
       (update)="updateStartDate($event)">
     </custom-date-time>
@@ -29,6 +30,7 @@
       [label]="'Start Time'"
       [displayFormat]="'HH:mm'"
       [pickerFormat]="'HH mm'"
+      [placeholder]="'select start time'"
       [value]="event.startTime"
       (update)="updateStartTime($event)">
     </custom-date-time>
@@ -46,6 +48,7 @@
       [label]="'End Date'"
       [displayFormat]="'DD de MMMM de YYYY'"
       [pickerFormat]="'DD MM YYYY'"
+      [placeholder]="'select end date'"
       [value]="event.endDate"
       (update)="updateEndDate($event)">
     </custom-date-time>
@@ -54,6 +57,7 @@
       [label]="'End Time'"
       [displayFormat]="'HH:mm'"
       [pickerFormat]="'HH mm'"
+      [placeholder]="'select end time'"
       [value]="event.endTime"
       (update)="updateEndTime($event)">
     </custom-date-time>
@@ -71,6 +75,7 @@
       [label]="'Bithday'"
       [displayFormat]="'DD de MMMM de YYYY'"
       [pickerFormat]="'DD MMMM YYYY'"
+      [placeholder]="'select bithday'"
       [value]="event.birthday"
       (update)="updateBithday($event)">
     </custom-date-time>

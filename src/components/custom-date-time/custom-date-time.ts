@@ -7,26 +7,15 @@ import { DateTime } from 'ionic-angular';
 })
 export class CustomDateTimeComponent {
 
-  @Input()
-  public label: string;
+  @Input() public label: string;
+  @Input() public value: string;
+  @Input() public displayFormat: string = 'DD/MM/YYYY';
+  @Input() public pickerFormat: string = 'DD MM YYYY';
+  @Input() public cancelText: string = 'Cancelar';
+  @Input() public doneText: string = 'Confirmar';
+  @Input() public placeholder : string = '';
 
-  @Input()
-  public value: string;
-
-  @Input()
-  public displayFormat: string = 'DD/MM/YYYY';
-
-  @Input()
-  public pickerFormat: string = 'DD MM YYYY';
-
-  @Input()
-  public cancelText: string = 'Cancelar';
-
-  @Input()
-  public doneText: string = 'Confirmar';
-
-  @Output()
-  public update: EventEmitter<string> = new EventEmitter<string>();
+  @Output() public update: EventEmitter<string> = new EventEmitter<string>();
 
   constructor() {
 
