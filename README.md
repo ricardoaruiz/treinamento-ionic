@@ -79,3 +79,10 @@ ionic serve -l
    **Referências Checkbox:**
 
    https://ionicframework.com/docs/components/#checkbox
+
+
+7. **Radio**
+
+   **Referências Radio:**
+
+   https://ionicframework.com/docs/components/#radio

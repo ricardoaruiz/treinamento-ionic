@@ -11,6 +11,7 @@ import { BadgePage } from './../pages/badge/badge';
 import { ButtonPage } from './../pages/button/button';
 import { CardPage } from '../pages/card/card';
 import { CheckboxPage } from '../pages/checkbox/checkbox';
+import { RadioPage } from '../pages/radio/radio';
 
 @Component({
   templateUrl: 'app.html'
@@ -18,7 +19,7 @@ import { CheckboxPage } from '../pages/checkbox/checkbox';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = CheckboxPage;
+  rootPage: any = RadioPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -34,7 +35,8 @@ export class MyApp {
       { title: 'Badge', component: BadgePage},
       { title: 'Button', component: ButtonPage},
       { title: 'Card', component: CardPage},
-      { title: 'Checkbox', component: CheckboxPage}
+      { title: 'Checkbox', component: CheckboxPage},
+      { title: 'Radio', component: RadioPage}
     ];
 
   }
