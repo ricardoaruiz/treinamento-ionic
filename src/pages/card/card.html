@@ -2,7 +2,7 @@
   <ion-navbar>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
-    </button>    
+    </button>
     <ion-title>Card</ion-title>
   </ion-navbar>
 </ion-header>
@@ -12,14 +12,24 @@
  <!-- Card simple -->
  <hr/>
  <h2>Card básico</h2>
- <ion-card>
+ <custom-card
+  [headerText]="'Custom Card Simples'"
+  [contentText]="'Conteúdo do Custom Card Simple'">
+
+  <ion-item>
+    <ion-label>Teste</ion-label>
+    <ion-input type="text" ></ion-input>
+  </ion-item>
+
+ </custom-card>
+ <!-- <ion-card>
    <ion-card-header>
      Card simples
    </ion-card-header>
    <ion-card-content>
      Conteúdo do card simple
    </ion-card-content>
- </ion-card> 
+ </ion-card>  -->
 
  <!-- Card lista de botões -->
  <hr/>
@@ -48,7 +58,7 @@
     <button ion-item>
       <ion-icon name="paw" item-start></ion-icon>
       Dog Park
-    </button>    
+    </button>
    </ion-list>
  </ion-card>
 
@@ -59,11 +69,11 @@
    <img src="https://scontent.fqps2-1.fna.fbcdn.net/v/t1.0-9/23561446_10156079789227280_2407302888920425796_n.jpg?_nc_cat=0&oh=0feb27c5d102cc205a48313bb00a9c94&oe=5B5A5B66"/>
    <ion-card-content>
      <ion-card-title>
-      Boyce Avenue       
+      Boyce Avenue
      </ion-card-title>
      <p>
       The most popular industrial group ever, and largely
-      responsible for bringing the music to a mass audience.       
+      responsible for bringing the music to a mass audience.
      </p>
 
     <ion-grid no-padding>
@@ -82,10 +92,10 @@
         </ion-col>
         <ion-col text-right>
           <button ion-button clear small icon-left class="share-button">
-            <ion-icon name="share-alt" item-end></ion-icon>        
+            <ion-icon name="share-alt" item-end></ion-icon>
             Share
           </button>
-        </ion-col>        
+        </ion-col>
       </ion-row>
     </ion-grid>
   </ion-card-content>
@@ -120,7 +130,7 @@
    </ion-item>
    <img src="assets/imgs/advance-card-bttf.png">
    <ion-card-content>
-     <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... 
+     <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine...
        out of a DeLorean?! Whoa. This is heavy.</p>
    </ion-card-content>
    <ion-row>

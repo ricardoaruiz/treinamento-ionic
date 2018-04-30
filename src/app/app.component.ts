@@ -20,7 +20,7 @@ import { DateTimePage } from '../pages/date-time/date-time';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = DateTimePage;
+  rootPage: any = HomePage;
 
   pages: Array<{title: string, component: any}>;
 
