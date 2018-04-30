@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>DateTime</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list >
+    <ion-list-header>
+      Start Life
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>Start Date</ion-label>
+      <ion-datetime
+        displayFormat="DD de MMMM de YYYY"
+        pickerFormat="DD MMMM YYYY"
+        cancelText="Cancelar"
+        doneText="Ok"
+        [(ngModel)]="event.startDate">
+      </ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Start Time</ion-label>
+      <ion-datetime displayFormat="HH:mm" pickerFormat="HH mm" [(ngModel)]="event.startTime"></ion-datetime>
+    </ion-item>
+  </ion-list>
+
+  <div class="line-space"></div>
+
+  <ion-list>
+    <ion-list-header>
+      End Life
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>End Date</ion-label>
+      <ion-datetime displayFormat="DD de MMMM de YYYY" pickerFormat="DD MMMM YYYY" [(ngModel)]="event.endDate"></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>End Time</ion-label>
+      <ion-datetime displayFormat="HH:mm" pickerFormat="HH mm" [(ngModel)]="event.endTime"></ion-datetime>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

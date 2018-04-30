@@ -16,6 +16,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { CheckboxPage } from '../pages/checkbox/checkbox';
 import { RangePage } from '../pages/range/range';
+import { DateTimePage } from '../pages/date-time/date-time';
 
 @NgModule({
   declarations: [
@@ -28,12 +29,18 @@ import { RangePage } from '../pages/range/range';
     ButtonPage,
     CardPage,
     CheckboxPage,
-    RangePage
+    RangePage,
+    DateTimePage
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp, {
+      monthNames: ['janeiro', 'fevereiro', 'mar\u00e7o', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro' ],
+      monthShortNames: ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez'],
+      dayNames: ['domingo', 'segunda-feira', 'ter\u00e7a-feira', 'quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado' ],
+      dayShortNames: ['dom', 'seg', 'ter', 'quar', 'quin', 'sex', 'sab' ],
+    }),
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -46,7 +53,8 @@ import { RangePage } from '../pages/range/range';
     ButtonPage,
     CardPage,
     CheckboxPage,
-    RangePage
+    RangePage,
+    DateTimePage
   ],
   providers: [
     StatusBar,

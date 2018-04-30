@@ -84,4 +84,10 @@ ionic serve -l
 
    **Referências Range:**
 
-  https://ionicframework.com/docs/components/#range   
+   https://ionicframework.com/docs/components/#range   
+
+8. **Datetime**
+
+   **Referências Datetime:**
+
+   https://ionicframework.com/docs/components/#datetime
