@@ -7,29 +7,32 @@
   </ion-navbar>
 </ion-header>
 
-
 <ion-content padding>
+
+  <h2>Dados da tela</h2>
+  <pre>{{event | json}}</pre>
 
   <ion-list >
     <ion-list-header>
       Start Life
     </ion-list-header>
 
-    <ion-item>
-      <ion-label>Start Date</ion-label>
-      <ion-datetime
-        displayFormat="DD de MMMM de YYYY"
-        pickerFormat="DD MMMM YYYY"
-        cancelText="Cancelar"
-        doneText="Ok"
-        [(ngModel)]="event.startDate">
-      </ion-datetime>
-    </ion-item>
+    <custom-date-time
+      [label]="'Start Date'"
+      [displayFormat]="'DD de MMMM de YYYY'"
+      [pickerFormat]="'DD MM YYYY'"
+      [value]="event.startDate"
+      (update)="updateStartDate($event)">
+    </custom-date-time>
 
-    <ion-item>
-      <ion-label>Start Time</ion-label>
-      <ion-datetime displayFormat="HH:mm" pickerFormat="HH mm" [(ngModel)]="event.startTime"></ion-datetime>
-    </ion-item>
+    <custom-date-time
+      [label]="'Start Time'"
+      [displayFormat]="'HH:mm'"
+      [pickerFormat]="'HH mm'"
+      [value]="event.startTime"
+      (update)="updateStartTime($event)">
+    </custom-date-time>
+
   </ion-list>
 
   <div class="line-space"></div>
@@ -39,15 +42,37 @@
       End Life
     </ion-list-header>
 
-    <ion-item>
-      <ion-label>End Date</ion-label>
-      <ion-datetime displayFormat="DD de MMMM de YYYY" pickerFormat="DD MMMM YYYY" [(ngModel)]="event.endDate"></ion-datetime>
-    </ion-item>
+    <custom-date-time
+      [label]="'End Date'"
+      [displayFormat]="'DD de MMMM de YYYY'"
+      [pickerFormat]="'DD MM YYYY'"
+      [value]="event.endDate"
+      (update)="updateEndDate($event)">
+    </custom-date-time>
 
-    <ion-item>
-      <ion-label>End Time</ion-label>
-      <ion-datetime displayFormat="HH:mm" pickerFormat="HH mm" [(ngModel)]="event.endTime"></ion-datetime>
-    </ion-item>
+    <custom-date-time
+      [label]="'End Time'"
+      [displayFormat]="'HH:mm'"
+      [pickerFormat]="'HH mm'"
+      [value]="event.endTime"
+      (update)="updateEndTime($event)">
+    </custom-date-time>
   </ion-list>
 
+  <div class="line-space"></div>
+
+  <ion-list >
+
+    <ion-list-header>
+      Birthday
+    </ion-list-header>
+
+    <custom-date-time
+      [label]="'Bithday'"
+      [displayFormat]="'DD de MMMM de YYYY'"
+      [pickerFormat]="'DD MMMM YYYY'"
+      [value]="event.birthday"
+      (update)="updateBithday($event)">
+    </custom-date-time>
+  </ion-list>
 </ion-content>
