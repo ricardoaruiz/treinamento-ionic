@@ -10,6 +10,7 @@ import { AlertPage } from './../pages/alert/alert';
 import { BadgePage } from './../pages/badge/badge';
 import { ButtonPage } from './../pages/button/button';
 import { CardPage } from '../pages/card/card';
+import { CheckboxPage } from '../pages/checkbox/checkbox';
 
 @Component({
   templateUrl: 'app.html'
@@ -17,7 +18,7 @@ import { CardPage } from '../pages/card/card';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = CardPage;
+  rootPage: any = CheckboxPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -32,7 +33,8 @@ export class MyApp {
       { title: 'Alert', component: AlertPage},
       { title: 'Badge', component: BadgePage},
       { title: 'Button', component: ButtonPage},
-      { title: 'Card', component: CardPage}
+      { title: 'Card', component: CardPage},
+      { title: 'Checkbox', component: CheckboxPage}
     ];
 
   }

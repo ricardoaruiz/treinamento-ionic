@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+import { FormsModule } from '@angular/forms';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -13,6 +14,7 @@ import { CardPage } from './../pages/card/card';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { CheckboxPage } from '../pages/checkbox/checkbox';
 
 @NgModule({
   declarations: [
@@ -23,10 +25,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AlertPage,
     BadgePage,
     ButtonPage,
-    CardPage
+    CardPage,
+    CheckboxPage
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
@@ -38,7 +42,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AlertPage,
     BadgePage,
     ButtonPage,
-    CardPage
+    CardPage,
+    CheckboxPage
   ],
   providers: [
     StatusBar,

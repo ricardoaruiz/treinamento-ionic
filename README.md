@@ -26,7 +26,7 @@ ionic serve -l
 ```
 
 
-### Componentes Ionic**Componentes Ionic**
+### Componentes Ionic
 
 1. **ActionSheet**
 
@@ -73,3 +73,9 @@ ionic serve -l
    **Referências Card:**
 
    https://ionicframework.com/docs/components/#cards
+
+6. **Checkbox**
+
+   **Referências Checkbox:**
+
+   https://ionicframework.com/docs/components/#checkbox
