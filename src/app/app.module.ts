@@ -18,6 +18,7 @@ import { RangePage } from '../pages/range/range';
 import { DateTimePage } from '../pages/date-time/date-time';
 import { ComponentsModule } from './../components/components.module';
 import { FabPage } from '../pages/fab/fab';
+import { GridPage } from '../pages/grid/grid';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { FabPage } from '../pages/fab/fab';
     CheckboxPage,
     RangePage,
     DateTimePage,
-    FabPage
+    FabPage,
+    GridPage
   ],
   imports: [
     BrowserModule,
@@ -53,7 +55,8 @@ import { FabPage } from '../pages/fab/fab';
     CheckboxPage,
     RangePage,
     DateTimePage,
-    FabPage
+    FabPage,
+    GridPage
   ],
   providers: [
     StatusBar,

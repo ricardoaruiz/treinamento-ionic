@@ -14,6 +14,7 @@ import { CheckboxPage } from '../pages/checkbox/checkbox';
 import { RangePage } from '../pages/range/range';
 import { DateTimePage } from '../pages/date-time/date-time';
 import { FabPage } from '../pages/fab/fab';
+import { GridPage } from '../pages/grid/grid';
 
 @Component({
   templateUrl: 'app.html'
@@ -21,7 +22,7 @@ import { FabPage } from '../pages/fab/fab';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = FabPage;
+  rootPage: any = GridPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -40,7 +41,8 @@ export class MyApp {
       { title: 'Checkbox', component: CheckboxPage},
       { title: 'Range', component: RangePage},
       { title: 'DateTime', component: DateTimePage},
-      { title: 'Fab', component: FabPage}
+      { title: 'Fab', component: FabPage},
+      { title: 'Grid', component: GridPage}
     ];
 
   }

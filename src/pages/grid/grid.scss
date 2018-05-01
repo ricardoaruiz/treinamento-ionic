@@ -1,0 +1,15 @@
+.col {
+    > div {
+        background: #454c5a;
+        border: 1px solid #454c5a;
+        border-radius: 5px;
+        padding: 5px;
+        color: #fff;
+        text-align: center;
+    }
+
+    p {
+        padding: 10px 0 0 10px !important;
+        margin: 0;
+    }
+}
