@@ -17,6 +17,7 @@ import { CheckboxPage } from '../pages/checkbox/checkbox';
 import { RangePage } from '../pages/range/range';
 import { DateTimePage } from '../pages/date-time/date-time';
 import { ComponentsModule } from './../components/components.module';
+import { FabPage } from '../pages/fab/fab';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ComponentsModule } from './../components/components.module';
     CardPage,
     CheckboxPage,
     RangePage,
-    DateTimePage
+    DateTimePage,
+    FabPage
   ],
   imports: [
     BrowserModule,
@@ -50,7 +52,8 @@ import { ComponentsModule } from './../components/components.module';
     CardPage,
     CheckboxPage,
     RangePage,
-    DateTimePage
+    DateTimePage,
+    FabPage
   ],
   providers: [
     StatusBar,

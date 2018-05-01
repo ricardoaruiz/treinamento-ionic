@@ -91,3 +91,9 @@ ionic serve -l
    **Referências Datetime:**
 
    https://ionicframework.com/docs/components/#datetime
+
+9. **FAB´s**
+
+   **Referências FAB:**
+
+   https://ionicframework.com/docs/components/#fabs
