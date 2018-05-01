@@ -11,7 +11,8 @@ import { BadgePage } from './../pages/badge/badge';
 import { ButtonPage } from './../pages/button/button';
 import { CardPage } from '../pages/card/card';
 import { CheckboxPage } from '../pages/checkbox/checkbox';
-import { RadioPage } from '../pages/radio/radio';
+import { RangePage } from '../pages/range/range';
+import { DateTimePage } from '../pages/date-time/date-time';
 
 @Component({
   templateUrl: 'app.html'
@@ -19,7 +20,7 @@ import { RadioPage } from '../pages/radio/radio';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = RadioPage;
+  rootPage: any = HomePage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -36,7 +37,8 @@ export class MyApp {
       { title: 'Button', component: ButtonPage},
       { title: 'Card', component: CardPage},
       { title: 'Checkbox', component: CheckboxPage},
-      { title: 'Radio', component: RadioPage}
+      { title: 'Range', component: RangePage},
+      { title: 'DateTime', component: DateTimePage}
     ];
 
   }

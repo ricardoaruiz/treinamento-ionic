@@ -80,9 +80,14 @@ ionic serve -l
 
    https://ionicframework.com/docs/components/#checkbox
 
+7. **Range**
 
-7. **Radio**
+   **Referências Range:**
 
-   **Referências Radio:**
+   https://ionicframework.com/docs/components/#range   
 
-   https://ionicframework.com/docs/components/#radio
+8. **Datetime**
+
+   **Referências Datetime:**
+
+   https://ionicframework.com/docs/components/#datetime
