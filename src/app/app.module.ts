@@ -20,6 +20,8 @@ import { ComponentsModule } from './../components/components.module';
 import { FabPage } from '../pages/fab/fab';
 import { GridPage } from '../pages/grid/grid';
 import { IconPage } from './../pages/icon/icon';
+import { NavigationPage } from '../pages/navigation/navigation';
+import { NavigationDetailPage } from '../pages/navigation-detail/navigation-detail';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { IconPage } from './../pages/icon/icon';
     DateTimePage,
     FabPage,
     GridPage,
-    IconPage
+    IconPage,
+    NavigationPage,
+    NavigationDetailPage
   ],
   imports: [
     BrowserModule,
@@ -59,7 +63,9 @@ import { IconPage } from './../pages/icon/icon';
     DateTimePage,
     FabPage,
     GridPage,
-    IconPage
+    IconPage,
+    NavigationPage,
+    NavigationDetailPage
   ],
   providers: [
     StatusBar,
