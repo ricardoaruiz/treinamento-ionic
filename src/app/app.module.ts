@@ -19,6 +19,7 @@ import { DateTimePage } from '../pages/date-time/date-time';
 import { ComponentsModule } from './../components/components.module';
 import { FabPage } from '../pages/fab/fab';
 import { GridPage } from '../pages/grid/grid';
+import { IconPage } from './../pages/icon/icon';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { GridPage } from '../pages/grid/grid';
     RangePage,
     DateTimePage,
     FabPage,
-    GridPage
+    GridPage,
+    IconPage
   ],
   imports: [
     BrowserModule,
@@ -56,7 +58,8 @@ import { GridPage } from '../pages/grid/grid';
     RangePage,
     DateTimePage,
     FabPage,
-    GridPage
+    GridPage,
+    IconPage
   ],
   providers: [
     StatusBar,

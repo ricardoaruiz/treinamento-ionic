@@ -15,6 +15,7 @@ import { RangePage } from '../pages/range/range';
 import { DateTimePage } from '../pages/date-time/date-time';
 import { FabPage } from '../pages/fab/fab';
 import { GridPage } from '../pages/grid/grid';
+import { IconPage } from '../pages/icon/icon';
 
 @Component({
   templateUrl: 'app.html'
@@ -22,7 +23,7 @@ import { GridPage } from '../pages/grid/grid';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = GridPage;
+  rootPage: any = IconPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -42,7 +43,8 @@ export class MyApp {
       { title: 'Range', component: RangePage},
       { title: 'DateTime', component: DateTimePage},
       { title: 'Fab', component: FabPage},
-      { title: 'Grid', component: GridPage}
+      { title: 'Grid', component: GridPage},
+      { title: 'Icon', component: IconPage}
     ];
 
   }

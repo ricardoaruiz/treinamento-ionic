@@ -103,3 +103,9 @@ ionic serve -l
    **Referências Grid**
 
    https://ionicframework.com/docs/components/#grid   
+
+10. **Icon**
+
+   **Referências Icon**
+
+   https://ionicframework.com/docs/components/#icons   
