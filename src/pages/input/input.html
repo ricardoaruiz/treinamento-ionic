@@ -4,15 +4,6 @@
   </ion-navbar>
 </ion-header>
 
-<ion-card>
-  <ion-card-header>
-    
-  </ion-card-header>
-  <ion-card-content>
-    
-  </ion-card-content>
-</ion-card>
-
 <ion-content padding>
 
   <!-- Fixed Inline Labels -->
@@ -132,5 +123,53 @@
       </ion-list>
     </ion-card-content>
   </ion-card>  
+
+  <!-- Input Types -->
+  <ion-card inset>
+      <ion-card-header>
+        Input Types
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list>
+          <ion-item>
+            <ion-label color="primary">Text Input</ion-label>
+            <ion-input placeholder="Text Input"></ion-input>
+          </ion-item>
+        
+          <ion-item>
+            <ion-label color="primary" fixed>Tel Input</ion-label>
+            <ion-input type="tel" placeholder="Tel Input"></ion-input>
+          </ion-item>
+        
+          <ion-item>
+              <ion-label color="primary" fixed>Number Input</ion-label>
+            <ion-input type="number" placeholder="Number Input with no label"></ion-input>
+          </ion-item>
+        
+          <ion-item>
+            <ion-label color="primary" stacked>Email Input</ion-label>
+            <ion-input type="email" placeholder="Email Input"></ion-input>
+          </ion-item>
+        
+          <ion-item>
+            <ion-label color="primary" stacked>Password Input</ion-label>
+            <ion-input type="password" placeholder="Password Input"></ion-input>
+          </ion-item>
+        
+          <ion-item>
+            <ion-label color="primary" floating>Default Input</ion-label>
+            <ion-input></ion-input>
+          </ion-item>
+        
+          <ion-item>
+            <ion-input placeholder="Clear Input" clearInput></ion-input>
+          </ion-item>
+        
+          <ion-item>
+            <ion-textarea placeholder="Enter a description"></ion-textarea>
+          </ion-item>
+        </ion-list>        
+      </ion-card-content>
+    </ion-card> 
 
 </ion-content>
