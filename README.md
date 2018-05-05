@@ -110,9 +110,15 @@ ionic serve -l
 
    https://ionicframework.com/docs/components/#icons   
 
+11. **Input**
+
+   **Referências Input**
+
+   https://ionicframework.com/docs/components/#inputs
+
 00. **Navigation**
 
    **Referências Navigation**
 
    https://ionicframework.com/docs/components/#navigation
-   
+      

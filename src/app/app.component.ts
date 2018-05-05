@@ -17,6 +17,7 @@ import { FabPage } from '../pages/fab/fab';
 import { GridPage } from '../pages/grid/grid';
 import { IconPage } from '../pages/icon/icon';
 import { NavigationPage } from '../pages/navigation/navigation';
+import { InputPage } from '../pages/input/input';
 
 @Component({
   templateUrl: 'app.html'
@@ -24,7 +25,7 @@ import { NavigationPage } from '../pages/navigation/navigation';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = NavigationPage;
+  rootPage: any = InputPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -46,7 +47,8 @@ export class MyApp {
       { title: 'Fab', component: FabPage},
       { title: 'Grid', component: GridPage},
       { title: 'Icon', component: IconPage},
-      { title: 'Navigation', component: NavigationPage}
+      { title: 'Navigation', component: NavigationPage},
+      { title: 'Input', component: InputPage}
     ];
 
   }

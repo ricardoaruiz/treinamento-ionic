@@ -22,6 +22,7 @@ import { GridPage } from '../pages/grid/grid';
 import { IconPage } from './../pages/icon/icon';
 import { NavigationPage } from '../pages/navigation/navigation';
 import { NavigationDetailPage } from '../pages/navigation-detail/navigation-detail';
+import { InputPage } from '../pages/input/input';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { NavigationDetailPage } from '../pages/navigation-detail/navigation-deta
     GridPage,
     IconPage,
     NavigationPage,
-    NavigationDetailPage
+    NavigationDetailPage,
+    InputPage
   ],
   imports: [
     BrowserModule,
@@ -65,7 +67,8 @@ import { NavigationDetailPage } from '../pages/navigation-detail/navigation-deta
     GridPage,
     IconPage,
     NavigationPage,
-    NavigationDetailPage
+    NavigationDetailPage,
+    InputPage
   ],
   providers: [
     StatusBar,
