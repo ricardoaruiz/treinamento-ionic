@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -10,7 +10,7 @@ export class NavigationDetailPage {
 
   public params: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navParams: NavParams) {
     this.params = this.navParams.get('params');
   }
 

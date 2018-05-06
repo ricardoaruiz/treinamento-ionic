@@ -1,5 +1,4 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { DateTime } from 'ionic-angular';
 
 @Component({
   selector: 'custom-date-time',

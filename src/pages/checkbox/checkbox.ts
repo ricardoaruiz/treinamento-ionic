@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage } from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -12,7 +12,7 @@ export class CheckboxPage {
   public isChecked: boolean = false;
   public isEnabled: boolean = false;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor() {
   }
 
   ionViewDidLoad() {

@@ -122,3 +122,53 @@ ionic serve -l
 
    https://ionicframework.com/docs/components/#navigation
       
+
+
+00. **Build**
+
+**Adiciona a plataforma Android**
+
+```
+ionic cordova platform add android
+```
+
+**Gera o splash e o icone do aplicativo**
+
+```
+ionic cordova resources -f
+```
+
+**Gera APK debug**
+
+```
+ionic cordova build android
+```
+
+**Gera APK release**
+
+```
+ionic cordova build android --release --prod
+```
+
+**Gerar chave do aplicativo**
+O arquivo "keytool.exe" fica na pasta bin do jre
+
+```
+keytool.exe -genkey -v -keystore "D:\desenvolvimento\git-repo\treinamento-ionic\treinamento-ionic.keystore" -alias treinamentoIonic -keyalg RSA -keysize 2048 -validity 10000
+```
+
+**Assinar arquivo de release**
+```
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore "D:\desenvolvimento\git-repo\treinamento-ionic\treinamento-ionic.keystore" "D:\desenvolvimento\git-repo\treinamento-ionic\platforms\android\app\build\outputs\apk\release\app-release-unsigned.apk" treinamentoIonic
+```
+
+**Gerar APK assinado**
+
+Ir na pasta da versão do SDK que será gerado
+```
+cd C:\"Program Files (x86)"\Android\android-sdk\build-tools\26.0.0
+```
+
+```
+./zipalign.exe -v 4 "D:\desenvolvimento\git-repo\treinamento-ionic\platforms\android\app\build\outputs\apk\release\app-release-unsigned.apk" "D:\desenvolvimento\git-repo\treinamento-ionic\treinamento-ionic-0.0.1.apk"
+```      

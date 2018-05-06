@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
+import { IonicPage, AlertController } from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -9,9 +9,7 @@ import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angu
 export class AlertPage {
 
   constructor(
-    public alertCtrl: AlertController,
-    public navCtrl: NavController, 
-    public navParams: NavParams) {
+    public alertCtrl: AlertController) {
   }
 
   ionViewDidLoad() {

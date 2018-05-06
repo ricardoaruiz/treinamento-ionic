@@ -9,5 +9,8 @@ import { ActionSheetPage } from './action-sheet';
   imports: [
     IonicPageModule.forChild(ActionSheetPage),
   ],
+  entryComponents: [
+    ActionSheetPage
+  ]
 })
 export class ActionSheetPageModule {}

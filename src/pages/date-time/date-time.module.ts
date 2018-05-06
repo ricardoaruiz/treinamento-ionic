@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { DateTimePage } from './date-time';
-import { CustomDateTimeComponent } from '../../components/custom-date-time/custom-date-time';
+import { ComponentsModule } from './../../components/components.module';
 
 @NgModule({
   declarations: [
-    DateTimePage,
-    CustomDateTimeComponent
+    DateTimePage
   ],
   imports: [
+    ComponentsModule,
     IonicPageModule.forChild(DateTimePage),
   ],
 })

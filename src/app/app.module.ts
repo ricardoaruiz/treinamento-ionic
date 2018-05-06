@@ -6,69 +6,55 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { FormsModule } from '@angular/forms';
 
 import { MyApp } from './app.component';
+
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
-import { ActionSheetPage } from '../pages/action-sheet/action-sheet';
-import { AlertPage } from './../pages/alert/alert';
-import { BadgePage } from './../pages/badge/badge';
-import { ButtonPage } from './../pages/button/button';
-import { CardPage } from './../pages/card/card';
-import { CheckboxPage } from '../pages/checkbox/checkbox';
-import { RangePage } from '../pages/range/range';
-import { DateTimePage } from '../pages/date-time/date-time';
-import { ComponentsModule } from './../components/components.module';
-import { FabPage } from '../pages/fab/fab';
-import { GridPage } from '../pages/grid/grid';
-import { IconPage } from './../pages/icon/icon';
-import { NavigationPage } from '../pages/navigation/navigation';
-import { NavigationDetailPage } from '../pages/navigation-detail/navigation-detail';
-import { InputPage } from '../pages/input/input';
+
+import { ActionSheetPageModule } from '../pages/action-sheet/action-sheet.module';
+import { AlertPageModule } from '../pages/alert/alert.module';
+import { BadgePageModule } from './../pages/badge/badge.module';
+import { ButtonPageModule } from './../pages/button/button.module';
+import { CardPageModule } from './../pages/card/card.module';
+import { CheckboxPageModule } from '../pages/checkbox/checkbox.module';
+import { RangePageModule } from '../pages/range/range.module';
+import { DateTimePageModule } from '../pages/date-time/date-time.module';
+import { FabPageModule } from '../pages/fab/fab.module';
+import { GridPageModule } from '../pages/grid/grid.module';
+import { IconPageModule } from './../pages/icon/icon.module';
+import { NavigationPageModule } from '../pages/navigation/navigation.module';
+import { NavigationDetailPageModule } from '../pages/navigation-detail/navigation-detail.module';
+import { InputPageModule } from '../pages/input/input.module';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    ListPage,
-    ActionSheetPage,
-    AlertPage,
-    BadgePage,
-    ButtonPage,
-    CardPage,
-    CheckboxPage,
-    RangePage,
-    DateTimePage,
-    FabPage,
-    GridPage,
-    IconPage,
-    NavigationPage,
-    NavigationDetailPage,
-    InputPage
+    ListPage
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    ComponentsModule,
+    ActionSheetPageModule,
+    AlertPageModule,
+    BadgePageModule,
+    ButtonPageModule,
+    CardPageModule,
+    CheckboxPageModule,
+    RangePageModule,
+    DateTimePageModule,
+    FabPageModule,
+    GridPageModule,
+    IconPageModule,
+    NavigationPageModule,
+    NavigationDetailPageModule,
+    InputPageModule,
     IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage,
-    ActionSheetPage,
-    AlertPage,
-    BadgePage,
-    ButtonPage,
-    CardPage,
-    CheckboxPage,
-    RangePage,
-    DateTimePage,
-    FabPage,
-    GridPage,
-    IconPage,
-    NavigationPage,
-    NavigationDetailPage,
-    InputPage
+    ListPage
   ],
   providers: [
     StatusBar,

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage } from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -17,7 +17,7 @@ export class RangePage {
   public contrast: number = 5
   public structure: any = { lower : 33, upper : 60};
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor() {
   }
 
   ionViewDidLoad() {

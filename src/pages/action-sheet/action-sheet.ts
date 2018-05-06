@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ActionSheetController } from 'ionic-angular';
+import { IonicPage, ActionSheetController } from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -9,9 +9,7 @@ import { IonicPage, NavController, NavParams, ActionSheetController } from 'ioni
 export class ActionSheetPage {
 
   constructor(
-    public actionSheetCtrl : ActionSheetController,
-    public navCtrl: NavController, 
-    public navParams: NavParams
+    public actionSheetCtrl : ActionSheetController
     ) {
   }
 

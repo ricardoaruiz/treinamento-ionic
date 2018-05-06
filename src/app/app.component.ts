@@ -25,7 +25,7 @@ import { InputPage } from '../pages/input/input';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = InputPage;
+  rootPage: any = HomePage;
 
   pages: Array<{title: string, component: any}>;
 
