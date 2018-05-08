@@ -25,7 +25,7 @@ import { InputPage } from '../pages/input/input';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = HomePage;
+  rootPage: any = ListPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -35,7 +35,6 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage },
       { title: 'ActionSheet', component: ActionSheetPage},
       { title: 'Alert', component: AlertPage},
       { title: 'Badge', component: BadgePage},
@@ -48,9 +47,10 @@ export class MyApp {
       { title: 'Grid', component: GridPage},
       { title: 'Icon', component: IconPage},
       { title: 'Navigation', component: NavigationPage},
-      { title: 'Input', component: InputPage}
+      { title: 'Input', component: InputPage},
+      { title: 'List', component: ListPage }
     ];
-
+    
   }
 
   initializeApp() {

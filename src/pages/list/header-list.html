@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Header List</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-list-header>
+      Games
+    </ion-list-header>
+    <ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+      {{ item }}
+    </ion-item>
+  </ion-list>
+</ion-content>

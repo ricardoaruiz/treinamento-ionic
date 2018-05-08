@@ -1,37 +1,86 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+import { SimpleListPage } from './simple-list';
+import { NoLineListPage } from './no-line-list';
+import { InsetListPage } from './inset-list';
+import { DividerListPage } from './divider-list';
+import { HeaderListPage } from './header-list';
+import { IconListPage } from './icon-list';
+import { AvatarListPage } from './avatar-list';
+import { ThumbnailListPage } from './thumbnail-list';
+
+@IonicPage()
 @Component({
   selector: 'page-list',
-  templateUrl: 'list.html'
+  templateUrl: 'list.html',
 })
 export class ListPage {
-  selectedItem: any;
-  icons: string[];
-  items: Array<{title: string, note: string, icon: string}>;
+
+  pages = [
+    {
+      class: SimpleListPage,
+      title: 'Simple List'
+    },
+    {
+      class: NoLineListPage,
+      title: 'No Line List'
+    },
+    {
+      class: InsetListPage,
+      title: 'Inset List'
+    },
+    {
+      class: DividerListPage,
+      title: 'Divider List'
+    },
+    {
+      class: HeaderListPage,
+      title: 'Header List'
+    },
+    {
+      class: IconListPage,
+      title: 'Icon List'
+    },
+    {
+      class: AvatarListPage,
+      title: 'Avatar List'
+    },
+    {
+      class: ThumbnailListPage,
+      title: 'Thumbnail List'
+    }
+  ];
+
+  items = [
+      'Doom',
+      'Donkey Kong III',
+      'Fallout',
+      'Final Fantasy VII',
+      'GTA',
+      'GoldenEye 007',
+      'Half Life',
+      'Halo',
+      'Mega Man X',
+      'Pokémon Yellow',
+      'Pac-Man',
+      'Super Metroid',
+      'Super Mario World',
+      'Street Fighter II',
+      'Star Fox',
+      'The Legend of Zelda',
+      'Tetris',
+    ];
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    // If we navigated to this page, we will have an item available as a nav param
-    this.selectedItem = navParams.get('item');
+  }  
 
-    // Let's populate this page with some filler content for funzies
-    this.icons = ['flask', 'wifi', 'beer', 'football', 'basketball', 'paper-plane',
-    'american-football', 'boat', 'bluetooth', 'build'];
-
-    this.items = [];
-    for (let i = 1; i < 11; i++) {
-      this.items.push({
-        title: 'Item ' + i,
-        note: 'This is item #' + i,
-        icon: this.icons[Math.floor(Math.random() * this.icons.length)]
-      });
-    }
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad ListPage');
   }
 
-  itemTapped(event, item) {
-    // That's right, we're pushing to ourselves!
-    this.navCtrl.push(ListPage, {
-      item: item
-    });
+  goTo(page: any) {
+    this.navCtrl.push(page.class, this.items);
   }
+
 }

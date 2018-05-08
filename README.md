@@ -116,12 +116,19 @@ ionic serve -l
 
    https://ionicframework.com/docs/components/#inputs
 
+12. **List**
+
+   **Referências List**
+
+   https://ionicframework.com/docs/components/#lists
+
 00. **Navigation**
 
    **Referências Navigation**
 
    https://ionicframework.com/docs/components/#navigation
       
+
 
 
 00. **Build**

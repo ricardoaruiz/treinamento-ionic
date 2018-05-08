@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Divider List</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list inset>
+    <ion-item-group *ngFor="let letter of letters; let i = index" [attr.data-index]="i">
+      <ion-item-divider >
+        {{letter}}
+      </ion-item-divider>
+      <ion-item *ngFor="let item of items[i]" (click)="itemSelected(item)">
+        {{item}}
+      </ion-item>
+    </ion-item-group>
+  </ion-list>
+</ion-content>

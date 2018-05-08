@@ -24,12 +24,12 @@ import { IconPageModule } from './../pages/icon/icon.module';
 import { NavigationPageModule } from '../pages/navigation/navigation.module';
 import { NavigationDetailPageModule } from '../pages/navigation-detail/navigation-detail.module';
 import { InputPageModule } from '../pages/input/input.module';
+import { ListPageModule } from '../pages/list/list.module';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,
-    ListPage
+    HomePage
   ],
   imports: [
     BrowserModule,
@@ -48,6 +48,7 @@ import { InputPageModule } from '../pages/input/input.module';
     NavigationPageModule,
     NavigationDetailPageModule,
     InputPageModule,
+    ListPageModule,
     IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
