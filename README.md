@@ -122,6 +122,12 @@ ionic serve -l
 
    https://ionicframework.com/docs/components/#lists
 
+13. **Toggle**
+
+   **Referências Toggle**
+
+   https://ionicframework.com/docs/components/#toggle
+
 00. **Navigation**
 
    **Referências Navigation**

@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>    
+    <ion-title>toggle</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list >
+    <ion-item-group>
+      <ion-item-divider color="light">
+        Froddo: {{toggles.froddo}}
+      </ion-item-divider>
+      <ion-item>
+        <ion-label>Froddo Baggins</ion-label>
+        <ion-toggle 
+          value="froddo" 
+          checked="toggles.froddo" 
+          [(ngModel)]="toggles.froddo">
+        </ion-toggle>
+      </ion-item>
+    </ion-item-group>
+
+    <ion-item-group>
+      <ion-item-divider color="light">
+        Sam: {{toggles.sam}}
+      </ion-item-divider>
+      <ion-item>
+        <ion-label>Sam</ion-label>
+        <ion-toggle 
+          color="danger"
+          value="sam"
+          checked="toggles.sam"
+          [(ngModel)]="toggles.sam">
+        </ion-toggle>
+      </ion-item>      
+    </ion-item-group>
+
+    <ion-item-group>
+      <ion-item-divider color="light">
+        Legolas: {{toggles.legolas}}
+      </ion-item-divider>
+      <ion-item>
+        <ion-label>Legolas</ion-label>
+        <ion-toggle 
+          color="secondary"
+          value="legolas"
+          checked="toggles.legolas"
+          [(ngModel)]="toggles.legolas">
+        </ion-toggle>
+      </ion-item>      
+    </ion-item-group>    
+
+  </ion-list>
+
+</ion-content>

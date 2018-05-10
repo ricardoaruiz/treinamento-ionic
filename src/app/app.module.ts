@@ -25,6 +25,7 @@ import { NavigationPageModule } from '../pages/navigation/navigation.module';
 import { NavigationDetailPageModule } from '../pages/navigation-detail/navigation-detail.module';
 import { InputPageModule } from '../pages/input/input.module';
 import { ListPageModule } from '../pages/list/list.module';
+import { TogglePageModule } from '../pages/toggle/toggle.module';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { ListPageModule } from '../pages/list/list.module';
     NavigationDetailPageModule,
     InputPageModule,
     ListPageModule,
+    TogglePageModule,
     IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
