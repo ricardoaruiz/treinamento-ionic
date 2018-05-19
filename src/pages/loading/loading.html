@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>loading</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button ion-button block (click)="mostrarLoading()">
+    <ion-spinner></ion-spinner>
+    Mostrar Loading Default      
+  </button>
+  <button ion-button block (click)="mostrarLoadingIOS()">
+    <ion-spinner name="ios"></ion-spinner>
+    Mostrar Loading IOS
+  </button>
+  <button ion-button block (click)="mostrarLoadingDots()">
+    <ion-spinner name="dots"></ion-spinner>
+    Mostrar Loading Dots
+  </button>
+  <button ion-button block (click)="mostrarLoadingCircles()">
+    <ion-spinner name="circles"></ion-spinner>
+    Mostrar Loading Circles
+  </button>
+  <button ion-button block (click)="mostrarLoadingCustomizado()">
+    Mostrar Loading Customizado
+  </button>
+
+
+
+</ion-content>

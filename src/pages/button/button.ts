@@ -22,4 +22,8 @@ export class ButtonPage {
     console.log('ionViewDidLoad ButtonPage');
   }
 
+  imprimir() {
+    window.print();
+  }
+
 }
