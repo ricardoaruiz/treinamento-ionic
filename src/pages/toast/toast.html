@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>toast</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <button ion-button block (click)="showToast('This is a toast in the top position', 'top')">Toast Top Position 1</button>
+  <button ion-button block (click)="showToast('This is a toast in the top position', 'top', 2000)">Toast Top Position 2</button>
+  <button ion-button block (click)="showToast('This is a toast in the middle position','middle', 2500)">Toast Middle Position 1</button>
+  <button ion-button block (click)="showToast('This is a toast in the middle position','middle')">Toast Middle Position 2</button>
+  <button ion-button block (click)="showToast('This is a toast in the bottom position','bottom', 3000)">Toast Bottom Position 1</button>
+  <button ion-button block (click)="showToast('This is a toast in the bottom position','bottom')">Toast Bottom Position 2</button>
+</ion-content>

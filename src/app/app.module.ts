@@ -27,6 +27,7 @@ import { InputPageModule } from '../pages/input/input.module';
 import { ListPageModule } from '../pages/list/list.module';
 import { TogglePageModule } from '../pages/toggle/toggle.module';
 import { LoadingPageModule } from './../pages/loading/loading.module';
+import { ToastPageModule } from '../pages/toast/toast.module';
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import { LoadingPageModule } from './../pages/loading/loading.module';
     ListPageModule,
     TogglePageModule,
     LoadingPageModule,
+    ToastPageModule,
     IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
