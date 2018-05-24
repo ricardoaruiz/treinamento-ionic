@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { ToolbarPage } from './toolbar';
+import { ToolbarPage, PopoverManager } from './toolbar';
 
 @NgModule({
   declarations: [
@@ -9,5 +9,8 @@ import { ToolbarPage } from './toolbar';
   imports: [
     IonicPageModule.forChild(ToolbarPage),
   ],
+  providers: [
+    PopoverManager
+  ]
 })
 export class ToolbarPageModule {}
