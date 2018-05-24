@@ -25,7 +25,6 @@ Para iniciar o app com o lab para ver os layouts nas diferentes plataformas
 ionic serve -l
 ```
 
-
 ### Componentes Ionic
 
 1. **ActionSheet**
@@ -128,6 +127,26 @@ ionic serve -l
 
    https://ionicframework.com/docs/components/#toggle
 
+14. **Loading e Spinner**
+
+   **Referências Loading e Spinner**
+
+   https://ionicframework.com/docs/components/#loading
+   https://ionicframework.com/docs/api/components/spinner/Spinner/
+
+15. **Toast**
+
+   **Referências Toast**
+
+    https://ionicframework.com/docs/components/#toast
+    https://ionicframework.com/docs/api/components/toast/ToastController/
+
+16. **Toolbar**
+
+   **Referências Toolbar**
+
+    https://ionicframework.com/docs/components/#toolbar
+    
 00. **Navigation**
 
    **Referências Navigation**
@@ -136,8 +155,7 @@ ionic serve -l
       
 
 
-
-00. **Build**
+### Build
 
 **Adiciona a plataforma Android**
 

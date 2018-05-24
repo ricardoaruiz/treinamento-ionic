@@ -28,11 +28,14 @@ import { ListPageModule } from '../pages/list/list.module';
 import { TogglePageModule } from '../pages/toggle/toggle.module';
 import { LoadingPageModule } from './../pages/loading/loading.module';
 import { ToastPageModule } from '../pages/toast/toast.module';
+import { ToolbarPageModule } from '../pages/toolbar/toolbar.module';
+import { PopoverContent } from '../pages/toolbar/toolbar';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    PopoverContent
   ],
   imports: [
     BrowserModule,
@@ -55,13 +58,15 @@ import { ToastPageModule } from '../pages/toast/toast.module';
     TogglePageModule,
     LoadingPageModule,
     ToastPageModule,
-    IonicModule.forRoot(MyApp),
+    ToolbarPageModule,
+    IonicModule.forRoot(MyApp, /* {mode:'ios'} */),
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    PopoverContent
   ],
   providers: [
     StatusBar,
