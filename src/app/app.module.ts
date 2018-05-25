@@ -30,6 +30,7 @@ import { LoadingPageModule } from './../pages/loading/loading.module';
 import { ToastPageModule } from '../pages/toast/toast.module';
 import { ToolbarPageModule } from '../pages/toolbar/toolbar.module';
 import { PopoverContent } from '../pages/toolbar/toolbar';
+import { SegmentPageModule } from '../pages/segment/segment.module';
 
 @NgModule({
   declarations: [
@@ -59,6 +60,7 @@ import { PopoverContent } from '../pages/toolbar/toolbar';
     LoadingPageModule,
     ToastPageModule,
     ToolbarPageModule,
+    SegmentPageModule,
     IonicModule.forRoot(MyApp, /* {mode:'ios'} */),
   ],
   bootstrap: [IonicApp],

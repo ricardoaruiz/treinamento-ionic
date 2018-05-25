@@ -146,6 +146,12 @@ ionic serve -l
    **Referências Toolbar**
 
     https://ionicframework.com/docs/components/#toolbar
+
+17. **Segment**
+
+   **Referências Segment**
+
+    https://ionicframework.com/docs/components/#segment    
     
 00. **Navigation**
 
