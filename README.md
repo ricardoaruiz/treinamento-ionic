@@ -156,9 +156,19 @@ ionic serve -l
 18. **Tabs**
 
    **Referências Tabs**
-   
+
    https://ionicframework.com/docs/components/#tabs
    https://ionicframework.com/docs/api/components/tabs/Tabs/
+
+19. **Select**
+
+   **Referências Select**
+
+   https://ionicframework.com/docs/components/#select
+   https://ionicframework.com/docs/api/components/select/Select/
+   https://github.com/ionic-team/ionic-preview-app/tree/master/src/pages/selects/basic
+
+
 
 00. **Navigation**
 

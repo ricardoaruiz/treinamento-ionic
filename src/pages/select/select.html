@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>select</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <!-- Single Selection -->
+  <ion-item>
+    <ion-label>Sexo</ion-label>
+    <ion-select [(ngModel)]="sexo" multiple="false" interface="popover">
+      <ion-option value="f">Feminino</ion-option>
+      <ion-option value="m">Masculino</ion-option>      
+    </ion-select>
+  </ion-item>
+  <ion-item >
+    Sexo selecionado: {{sexo === undefined ? '' : sexo === 'm' ? 'Masculino' : 'Feminino'}}
+  </ion-item>  
+
+  <ion-item>
+    <ion-label>Pizzas</ion-label>
+    <ion-select [(ngModel)]="pizzas" [selectOptions]="pizzasAlertOpts" multiple="true" okText="Confirmar" cancelText="Cancelar" >
+      <ion-option value="1">Mussarela</ion-option>
+      <ion-option value="2">Marguerita</ion-option>
+      <ion-option value="3">Peperoni</ion-option>      
+    </ion-select>
+  </ion-item>
+  <ion-item >
+    Pizzas selecionadas: {{pizzas | json}}
+  </ion-item>  
+
+  <ion-item>
+    <ion-label>Music</ion-label>
+    <ion-select [(ngModel)]="music" [selectOptions]="musicAlertOpts">
+      <ion-option>Alice in Chains</ion-option>
+      <ion-option>Green Day</ion-option>
+      <ion-option>Nirvana</ion-option>
+      <ion-option>Pearl Jam</ion-option>
+      <ion-option>Smashing Pumpkins</ion-option>
+      <ion-option>Soundgarden</ion-option>
+      <ion-option (click)="stpSelect()">Stone Temple Pilots</ion-option>
+    </ion-select>
+  </ion-item>  
+  <ion-item>
+    Música selecionada: {{music}}
+  </ion-item>
+
+</ion-content>

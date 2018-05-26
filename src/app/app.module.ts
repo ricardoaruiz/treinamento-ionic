@@ -32,6 +32,7 @@ import { ToolbarPageModule } from '../pages/toolbar/toolbar.module';
 import { PopoverContent } from '../pages/toolbar/toolbar';
 import { SegmentPageModule } from '../pages/segment/segment.module';
 import { TabsPageModule } from '../pages/tabs/tabs.module';
+import { SelectPageModule } from '../pages/select/select.module';
 
 @NgModule({
   declarations: [
@@ -63,6 +64,7 @@ import { TabsPageModule } from '../pages/tabs/tabs.module';
     ToolbarPageModule,
     SegmentPageModule,
     TabsPageModule,
+    SelectPageModule,
     IonicModule.forRoot(MyApp, /* {mode:'ios'} */),
   ],
   bootstrap: [IonicApp],
