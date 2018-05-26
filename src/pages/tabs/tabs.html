@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>tabs</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-tabs tabs-only tabs-layout="icon-bottom" [selectedIndex]="tabSelectedIndex">
+    <ion-tab tabTitle="Buttons" [root]="buttonPage" tabIcon="logo-android" [tabBadge]="buttonPageBagdeQtd" tabBadgeStyle="danger"></ion-tab>
+    <ion-tab tabTitle="Cards" [root]="cardPage" tabIcon="logo-apple" [tabBadge]="cardPageBadgeQtd" tabBadgeStyle="danger"></ion-tab>
+    <ion-tab tabTitle="Toast" [root]="toastPage" tabIcon="logo-windows" [tabBadge]="toastPageBadgeQtd" tabBadgeStyle="danger"></ion-tab>    
+  </ion-tabs>
+</ion-content>

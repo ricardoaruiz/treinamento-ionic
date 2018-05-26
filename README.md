@@ -153,6 +153,13 @@ ionic serve -l
 
     https://ionicframework.com/docs/components/#segment    
     
+18. **Tabs**
+
+   **Referências Tabs**
+   
+   https://ionicframework.com/docs/components/#tabs
+   https://ionicframework.com/docs/api/components/tabs/Tabs/
+
 00. **Navigation**
 
    **Referências Navigation**
