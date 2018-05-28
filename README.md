@@ -198,6 +198,12 @@ ionic cordova resources -f
 ionic cordova build android
 ```
 
+**Roda a App no device em modo DEV**
+
+```
+ionic cordova run android --device
+```
+
 **Gera APK release**
 
 ```

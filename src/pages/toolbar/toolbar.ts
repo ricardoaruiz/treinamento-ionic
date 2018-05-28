@@ -1,6 +1,5 @@
 import { Component, Injectable } from '@angular/core';
-import { IonicPage, PopoverController, Popover } from 'ionic-angular';
-import { Observable } from 'rxjs/Observable';
+import { PopoverController, Popover, IonicPage } from 'ionic-angular';
 import { Subject } from 'rxjs/Subject';
 import { Subscription } from 'rxjs/Subscription';
 
@@ -77,7 +76,7 @@ export class PopoverContent {
 export class ToolbarPage {
 
   private popover : Popover;
-  private popverSubscription: Subscription;
+  //private popverSubscription: Subscription;
 
   constructor(public popoverCtrl: PopoverController,
               public popoverManager: PopoverManager) {
@@ -85,7 +84,8 @@ export class ToolbarPage {
   }
 
   ionViewDidLoad() {
-    this.popverSubscription = this.popoverManager.on('fechar', () => {
+    //this.popverSubscription = 
+    this.popoverManager.on('fechar', () => {
       console.log('fechar');
       this.popover.dismiss();
     });

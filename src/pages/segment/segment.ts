@@ -11,7 +11,12 @@ export class SegmentPage {
   public pet: string = 'puppies';
 
   constructor(private platform: Platform) {
-    console.log(platform.is('android'));
+    const isAndroid = this.platform.is('android');
+    if (isAndroid) {
+      console.log('Android');
+    } else {
+      console.log('Outros');      
+    }
   }
 
   ionViewDidLoad() {

@@ -32,7 +32,7 @@ import { SelectPage } from '../pages/select/select';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = SelectPage;
+  rootPage: any = HomePage;
 
   pages: Array<{title: string, component: any}>;
 
