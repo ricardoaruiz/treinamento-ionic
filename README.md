@@ -168,15 +168,32 @@ ionic serve -l
    https://ionicframework.com/docs/api/components/select/Select/
    https://github.com/ionic-team/ionic-preview-app/tree/master/src/pages/selects/basic
 
+20. **Menu**
 
+    **Referências Menu**
 
-00. **Navigation**
+    https://ionicframework.com/docs/components/#menu
+    https://ionicframework.com/docs/api/components/menu/Menu/   
+
+21. **Navigation**
 
    **Referências Navigation**
 
    https://ionicframework.com/docs/components/#navigation
-      
 
+22. **Modal**
+
+   **Referências Modal**
+
+   https://ionicframework.com/docs/components/#modals
+   https://ionicframework.com/docs/api/components/modal/ModalController/      
+
+23. **Slides**
+
+    **Referências Modal**
+
+    https://ionicframework.com/docs/components/#slides
+    https://ionicframework.com/docs/api/components/slides/Slides/
 
 ### Build
 

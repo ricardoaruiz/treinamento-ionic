@@ -34,6 +34,7 @@ import { SegmentPageModule } from '../pages/segment/segment.module';
 import { TabsPageModule } from '../pages/tabs/tabs.module';
 import { SelectPageModule } from '../pages/select/select.module';
 import { ModalPageModule } from '../pages/modal/modal.module';
+import { SlidePageModule } from '../pages/slide/slide.module';
 
 @NgModule({
   declarations: [
@@ -67,6 +68,7 @@ import { ModalPageModule } from '../pages/modal/modal.module';
     TabsPageModule,
     SelectPageModule,
     ModalPageModule,
+    SlidePageModule,
     IonicModule.forRoot(MyApp, /* {mode:'ios'} */),
   ],
   bootstrap: [IonicApp],
