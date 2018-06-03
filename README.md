@@ -195,6 +195,13 @@ ionic serve -l
     https://ionicframework.com/docs/components/#slides
     https://ionicframework.com/docs/api/components/slides/Slides/
 
+24. **Popover**
+
+    **Referências Popover**
+
+    https://ionicframework.com/docs/components/#popovers
+    https://ionicframework.com/docs/api/components/popover/PopoverController/
+
 ### Build
 
 **Adiciona a plataforma Android**

@@ -27,6 +27,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { SelectPage } from '../pages/select/select';
 import { ModalPage } from '../pages/modal/modal';
 import { SlidePage } from '../pages/slide/slide';
+import { PopoverPage } from '../pages/popover/popover';
 
 @Component({
   templateUrl: 'app.html'
@@ -34,7 +35,7 @@ import { SlidePage } from '../pages/slide/slide';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = SlidePage;
+  rootPage: any = PopoverPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -66,7 +67,8 @@ export class MyApp {
       { title: 'Tabs', component: TabsPage },
       { title: 'Select', component: SelectPage },
       { title: 'Modal', component: ModalPage },
-      { title: 'Slide', component: SlidePage }
+      { title: 'Slide', component: SlidePage },
+      { title: 'Popover', component: PopoverPage }
     ];
     
   }

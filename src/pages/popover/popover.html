@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>popover</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="abrirPopover($event)">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item >
+    <button ion-button block (click)="abrirPopover($event)">Abrir Popover</button>
+  </ion-item>
+</ion-content>

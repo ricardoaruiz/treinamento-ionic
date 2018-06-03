@@ -35,6 +35,7 @@ import { TabsPageModule } from '../pages/tabs/tabs.module';
 import { SelectPageModule } from '../pages/select/select.module';
 import { ModalPageModule } from '../pages/modal/modal.module';
 import { SlidePageModule } from '../pages/slide/slide.module';
+import { PopoverPageModule } from '../pages/popover/popover.module';
 
 @NgModule({
   declarations: [
@@ -69,6 +70,7 @@ import { SlidePageModule } from '../pages/slide/slide.module';
     SelectPageModule,
     ModalPageModule,
     SlidePageModule,
+    PopoverPageModule,
     IonicModule.forRoot(MyApp, /* {mode:'ios'} */),
   ],
   bootstrap: [IonicApp],
