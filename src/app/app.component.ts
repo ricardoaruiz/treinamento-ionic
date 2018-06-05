@@ -28,6 +28,7 @@ import { SelectPage } from '../pages/select/select';
 import { ModalPage } from '../pages/modal/modal';
 import { SlidePage } from '../pages/slide/slide';
 import { PopoverPage } from '../pages/popover/popover';
+import { CepPage } from '../pages/cep/cep';
 
 @Component({
   templateUrl: 'app.html'
@@ -35,7 +36,7 @@ import { PopoverPage } from '../pages/popover/popover';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = PopoverPage;
+  rootPage: any = CepPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -68,7 +69,8 @@ export class MyApp {
       { title: 'Select', component: SelectPage },
       { title: 'Modal', component: ModalPage },
       { title: 'Slide', component: SlidePage },
-      { title: 'Popover', component: PopoverPage }
+      { title: 'Popover', component: PopoverPage },
+      { title: 'Consulta CEP', component: CepPage }
     ];
     
   }

@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>cep</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-item>
+    <ion-label stacked>CEP</ion-label>
+    <ion-input type="number" [(ngModel)]="cep"></ion-input>
+  </ion-item>
+  
+  <button ion-button block (click)="consultarEndereco()">Consultar</button>    
+  
+  <ion-card *ngIf="endereco && !erroConsulta">
+    <ion-card-header>
+      Resultado da Pesquisa
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item *ngIf="endereco.logradouro">{{endereco.logradouro}}</ion-item>
+      <ion-item *ngIf="endereco.unidade">Número: {{endereco.unidade}}</ion-item>      
+      <ion-item *ngIf="endereco.bairro">Bairro: {{endereco.bairro}}</ion-item>
+      <ion-item *ngIf="endereco.complemento">Complemento: {{endereco.complemento}}</ion-item>
+      <ion-item >Cidade: {{endereco.localidade}}</ion-item>
+      <ion-item >Estado: {{endereco.uf}}</ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngIf="erroConsulta">
+    <ion-card-header>
+      Erro na consulta
+    </ion-card-header>
+    <ion-card-content>
+      <p>Ocorreu um erro na consulta. Tente novamente mais tarde</p>
+    </ion-card-content>
+  </ion-card>
+
+  <button ion-button block *ngIf="endereco || erroConsulta" (click)="limpar()">Limpar</button>
+
+</ion-content>

@@ -1,9 +1,11 @@
+import { CepPageModule } from './../pages/cep/cep.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { MyApp } from './app.component';
 
@@ -36,6 +38,8 @@ import { SelectPageModule } from '../pages/select/select.module';
 import { ModalPageModule } from '../pages/modal/modal.module';
 import { SlidePageModule } from '../pages/slide/slide.module';
 import { PopoverPageModule } from '../pages/popover/popover.module';
+import { CepProvider } from '../providers/cep/cep-provider';
+
 
 @NgModule({
   declarations: [
@@ -44,6 +48,7 @@ import { PopoverPageModule } from '../pages/popover/popover.module';
     PopoverContent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     FormsModule,
     ActionSheetPageModule,
@@ -71,6 +76,7 @@ import { PopoverPageModule } from '../pages/popover/popover.module';
     ModalPageModule,
     SlidePageModule,
     PopoverPageModule,
+    CepPageModule,
     IonicModule.forRoot(MyApp, /* {mode:'ios'} */),
   ],
   bootstrap: [IonicApp],
@@ -83,7 +89,8 @@ import { PopoverPageModule } from '../pages/popover/popover.module';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    CepProvider
   ]
 })
 export class AppModule {}
